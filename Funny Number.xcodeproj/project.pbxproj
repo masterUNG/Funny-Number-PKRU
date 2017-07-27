@@ -12,6 +12,7 @@
 		C4E08E8F1F29D7AA00700121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E08E8D1F29D7AA00700121 /* Main.storyboard */; };
 		C4E08E911F29D7AA00700121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E08E901F29D7AA00700121 /* Assets.xcassets */; };
 		C4E08E941F29D7AA00700121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E08E921F29D7AA00700121 /* LaunchScreen.storyboard */; };
+		C4E08E9C1F29DFE700700121 /* bg_prime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4E08E9B1F29DFE700700121 /* bg_prime.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C4E08E901F29D7AA00700121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E08E931F29D7AA00700121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4E08E951F29D7AA00700121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E08E9B1F29DFE700700121 /* bg_prime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_prime.jpg; path = ../../../../Desktop/bg_prime.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E08E891F29D7AA00700121 /* AppDelegate.swift */,
+				C4E08E9B1F29DFE700700121 /* bg_prime.jpg */,
 				C4E08E8B1F29D7AA00700121 /* ViewController.swift */,
 				C4E08E8D1F29D7AA00700121 /* Main.storyboard */,
 				C4E08E901F29D7AA00700121 /* Assets.xcassets */,
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E08E9C1F29DFE700700121 /* bg_prime.jpg in Resources */,
 				C4E08E941F29D7AA00700121 /* LaunchScreen.storyboard in Resources */,
 				C4E08E911F29D7AA00700121 /* Assets.xcassets in Resources */,
 				C4E08E8F1F29D7AA00700121 /* Main.storyboard in Resources */,
