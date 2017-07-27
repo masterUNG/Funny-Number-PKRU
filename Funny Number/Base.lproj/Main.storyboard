@@ -36,8 +36,16 @@
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.62352941176470589" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Home" id="9oS-ej-upV">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="SP3-8K-J81"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="vfd-LI-IkG"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="SP3-8K-J81">
+                                            <connections>
+                                                <action selector="decButton:" destination="BYZ-38-t0r" id="rWt-2T-Qxs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="vfd-LI-IkG">
+                                            <connections>
+                                                <action selector="incButton:" destination="BYZ-38-t0r" id="uDR-Bc-rux"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -57,6 +65,9 @@
                             <constraint firstItem="dim-Wi-tpV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qxH-wd-eVg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="o4y-36-Aoa" id="92h-qG-n1t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
