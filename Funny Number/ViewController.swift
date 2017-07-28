@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let myClass = MyClass()
         let intNewNumber = myClass.decreaseNumber(intNumber: intNumber!)
         print("Number ==> \(intNewNumber)")
-        
+        showNumber(intNumber: intNewNumber)
         
         
         
@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         let myClass = MyClass()
         let intNewNumber = myClass.increaseNumber(intNumber: intNumber!)
         print("Number ==> \(intNewNumber)")
+        showNumber(intNumber: intNewNumber)
         
         
         
@@ -51,7 +52,17 @@ class ViewController: UIViewController {
         
         
         
+    }   // viewDidLoad
+    
+    func showNumber(intNumber: Int) -> Void {
+        
+        numberLabel.text = "\(intNumber)"
+        
     }
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
