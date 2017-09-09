@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,17 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_prime.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pnC-He-9b3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4y-36-Aoa">
-                                <rect key="frame" x="16" y="185" width="343" height="298.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4y-36-Aoa">
+                                <rect key="frame" x="16" y="184" width="343" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="250"/>
-                                <color key="textColor" red="0.0" green="0.37647058823529411" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dim-Wi-tpV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dim-Wi-tpV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.62352941176470589" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Home" id="9oS-ej-upV">
@@ -49,21 +47,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="pnC-He-9b3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="dim-Wi-tpV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="707-i3-48Y"/>
-                            <constraint firstItem="o4y-36-Aoa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="L1P-Iv-tov"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pnC-He-9b3" secondAttribute="bottom" id="XbN-3E-Vt9"/>
-                            <constraint firstAttribute="trailing" secondItem="dim-Wi-tpV" secondAttribute="trailing" id="akx-CN-1F9"/>
-                            <constraint firstItem="pnC-He-9b3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dMA-Sy-Jpw"/>
-                            <constraint firstItem="o4y-36-Aoa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g18-W0-u4d"/>
-                            <constraint firstItem="o4y-36-Aoa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iXS-hk-1aB"/>
-                            <constraint firstItem="pnC-He-9b3" firstAttribute="top" secondItem="dim-Wi-tpV" secondAttribute="bottom" id="lF0-zA-bsA"/>
-                            <constraint firstAttribute="trailing" secondItem="pnC-He-9b3" secondAttribute="trailing" id="lxv-bB-gV4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="o4y-36-Aoa" secondAttribute="trailing" id="qwy-NO-t3F"/>
-                            <constraint firstItem="dim-Wi-tpV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qxH-wd-eVg"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="numberLabel" destination="o4y-36-Aoa" id="92h-qG-n1t"/>
@@ -75,6 +64,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_prime.jpg" width="1200" height="800"/>
+        <image name="bg.png" width="1000" height="750"/>
     </resources>
 </document>
